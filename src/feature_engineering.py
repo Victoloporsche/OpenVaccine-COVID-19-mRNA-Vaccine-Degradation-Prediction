@@ -33,7 +33,7 @@ class FeatureEngineering:
             cat_mapping = dict(zip(labelEncoder.classes_, labelEncoder.transform(labelEncoder.classes_)))
             mapping_dict[feature] = cat_mapping
 
-        with open('../output/dict_house_price.csv', 'w', newline='') as csv_file:
+        with open('../output/dict_open_vaccine_predictor.csv', 'w', newline='') as csv_file:
             writer = csv.writer(csv_file)
             for key, value in mapping_dict.items():
                 writer.writerow([key, value])
