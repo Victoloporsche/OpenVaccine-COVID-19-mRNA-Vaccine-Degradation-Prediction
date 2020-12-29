@@ -88,7 +88,7 @@ class Model:
         #parameters = {'n_estimators': num_estimators, 'criterion': criterion}
         #rf_random_search = RandomizedSearchCV(rf_model, param_distributions=parameters)
         fit_model = rf_model.fit(self.xtrain, self.ytrain)
-        save_model = pickle.dump(fit_model, open('../models/model_movie_ratings_predictor.pkl', 'wb'))
+        save_model = pickle.dump(fit_model, open('../models/model_open_vaccine_predictor.pkl', 'wb'))
         return fit_model
 
     def model_prediction(self):
